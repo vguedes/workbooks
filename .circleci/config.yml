@@ -12,8 +12,11 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./manage.py test
+          command: coverage run manage.py test
           name: Test
+      - run:
+          command: codecov
+          name: Codecov.io
 
 workflows:
   main:
