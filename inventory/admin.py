@@ -25,6 +25,6 @@ class BookAdmin(admin.ModelAdmin):
         )
         response['Content-Disposition'] = 'attachment; filename=myexport.xlsx'
         return response
-    download_xlsx.short_description = 'Download selected books'
+    download_xlsx.short_description = 'Download selected books information'
 
 admin.site.register(Book, BookAdmin)
