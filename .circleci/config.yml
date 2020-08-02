@@ -14,9 +14,9 @@ jobs:
       - run:
           command: coverage run manage.py test
           name: Test
-      - run:
-          command: coverage report
-          name: Coverage report
+      # - run:
+      #     command: coverage report
+      #     name: Coverage report
       - run:
           command: codecov
           name: Codecov.io
