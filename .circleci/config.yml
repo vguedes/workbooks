@@ -17,9 +17,9 @@ jobs:
       - run:
           command: coverage report
           name: Coverage report
-      # - run:
-      #     command: codecov
-      #     name: Codecov.io
+      - run:
+          command: codecov
+          name: Codecov.io
 
 workflows:
   main:
