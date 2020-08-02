@@ -16,9 +16,9 @@ class BookAdmin(admin.ModelAdmin):
     def download_xlsx(self, request, queryset):
         workbook = Workbook()
         worksheet = workbook.active
-        worksheet.append(['id', 'title'])
+        worksheet.append(['ID', 'Title', 'Author Last Name', 'Author Fist Name'])
         for book in queryset.order_by('id'):
-            worksheet.append([book.id, book.title])
+            worksheet.append([book.id, book.title, book.author.last_name, book.author.first_name])
         response = HttpResponse(
             content=save_virtual_workbook(workbook),
             content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
