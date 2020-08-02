@@ -1,6 +1,6 @@
 # Django and openpyxl example
 [![<vguedes>](https://circleci.com/gh/vguedes/workbooks.svg?style=shield)](https://app.circleci.com/pipelines/github/vguedes/workbooks)
-___
+[![codecov](https://codecov.io/gh/vguedes/workbooks/branch/master/graph/badge.svg)](https://codecov.io/gh/vguedes/workbooks)
 
 ## Prerequisites
 1. docker
