@@ -1,4 +1,7 @@
 # Django and openpyxl example
+[![<vguedes>](https://circleci.com/gh/vguedes/workbooks.svg?style=shield)](https://app.circleci.com/pipelines/github/vguedes/workbooks)
+___
+
 ## Prerequisites
 1. docker
 1. docker-compose
